@@ -11,11 +11,13 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-importScripts('/precache-manifest.8d043b3e7ef9b963f9a5d9a40e9f5e81.js');
+importScripts(
+  "/precache-manifest.9974ff66ce783f792ebe4725ac1e6468.js"
+);
 
-workbox.core.setCacheNameDetails({prefix: 'e9-web'});
+workbox.core.setCacheNameDetails({prefix: "e9-web"});
 
 workbox.core.skipWaiting();
 
