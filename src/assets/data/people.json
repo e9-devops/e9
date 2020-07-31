@@ -1,0 +1,135 @@
+[
+  {
+    "Title": "Anastasia Petrova",
+    "Subtitle": "Mobile Developer",
+    "ImageURL": "team/people/anastasia.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Akhila Ramesh",
+    "Subtitle": "Mobile Developer",
+    "ImageURL": "team/people/akhila.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Ramesh Reddy",
+    "Subtitle": "Software Developer",
+    "ImageURL": "team/people/ramesh.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Chris Simpson",
+    "Subtitle": "Business Analyst",
+    "ImageURL": "team/people/chris.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Ankit Wadhwani",
+    "Subtitle": "Software Developer",
+    "ImageURL": "team/people/ankit.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Kaushal P",
+    "Subtitle": "Mobile Developer",
+    "ImageURL": "team/people/kaushal.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Pratik Kanthi",
+    "Subtitle": "Software Developer",
+    "ImageURL": "team/people/pratik.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Manu Remesh",
+    "Subtitle": "UI/UX, Design",
+    "ImageURL": "team/people/manu.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Anjali Grover",
+    "Subtitle": "Account Management",
+    "ImageURL": "team/people/anjali.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Harshvardhan Singh",
+    "Subtitle": "Account Management",
+    "ImageURL": "team/people/harsh.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Jamie Hibbert",
+    "Subtitle": "Software Support",
+    "ImageURL": "team/people/jamie.jpg",
+    "Category": "Tech"
+  },
+  
+  {
+    "Title": "Sajad Akhtar",
+    "Subtitle": "Product Sales",
+    "ImageURL": "team/people/sajad.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Bal Notay",
+    "Subtitle": "Business Development",
+    "ImageURL": "team/people/bal.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Karan Grover",
+    "Subtitle": "Accounts & Finance",
+    "ImageURL": "team/people/karan.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Sharvilak Thakore",
+    "Subtitle": "Software Developer",
+    "ImageURL": "team/people/sharvilak.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Yogendra Yadav",
+    "Subtitle": "Software Developer",
+    "ImageURL": "team/people/yogendra.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Soumya Kanthi",
+    "Subtitle": "Product Design",
+    "ImageURL": "team/people/soumya.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Monik Grover",
+    "Subtitle": "Solutions Architect",
+    "ImageURL": "team/people/monik.jpg",
+    "Category": "Tech"
+  },
+  {
+    "Title": "Tarpit Grover",
+    "Subtitle": "Managing Director",
+    "ImageURL": "team/people/tarpit.jpg",
+    "Category": "Management"
+  },
+  {
+    "Title": "David Beech",
+    "Subtitle": "Technical Director",
+    "ImageURL": "team/people/david.jpg",
+    "Category": "Management"
+  },
+  {
+    "Title": "Gregory Hoy",
+    "Subtitle": "Non Executive Director",
+    "ImageURL": "team/people/greg.jpg",
+    "Category": "Management"
+  },
+  {
+    "Title": "Keith Young",
+    "Subtitle": "Non Executive Director",
+    "ImageURL": "team/people/keith.jpg",
+    "Category": "Management"
+  }
+]

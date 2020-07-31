@@ -1,0 +1,92 @@
+footer {
+    position: relative;
+    overflow: hidden;
+
+    .form-group {
+        position: relative;
+        width: 75%;
+        margin: 0 auto;
+
+        .form-control {
+            padding: 2rem 1rem;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            border-radius: 9999px;
+
+            &:focus {
+                border-color: lighten($primary, 25%);
+                box-shadow: 0 0 0 0.2rem rgba(210, 30, 28, 0.2)
+            }
+        }
+
+        .button {
+            display: block;
+            height: 50px;
+            width: 50px;
+            background: $primary;
+            border-radius: 50%;
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            background-image: url("~@/assets/images/icons/right.svg");
+            background-size: 60%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            border: none;
+
+            &:hover {
+                box-shadow: none !important;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+        }
+
+        @include media-breakpoint-down(sm) {
+            .button {
+                top: 4px;
+                right: 4px;
+            }
+        }
+
+    }
+
+    .list-group-horizontal {
+        flex-wrap: wrap;
+
+        li {
+            a {
+                color: $secondary;
+                font-family: $font-weight-demi;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        &.social-list {
+            li {
+                a {
+                    height: 30px;
+                    width: 30px;
+                    display: block;
+                    background: $secondary;
+                    border-radius: 4px;
+                    color: #fff;
+                    -webkit-transition: all 0.2s;
+                    transition: all 0.2s;
+
+                    i {
+                        line-height: 30px;
+                    }
+
+                    &:hover {
+                        background: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

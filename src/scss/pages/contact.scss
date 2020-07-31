@@ -1,0 +1,32 @@
+form {
+    >.row {
+        div[class^="col-"] {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+.map-wrapper {
+    height: 500px;
+}
+
+.address-wrapper {
+    background-color: $dark;
+    height: 500px;
+
+    a:hover {
+        color: $primary !important;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .map-wrapper {
+        height: 400px;
+    }
+
+    .address-wrapper {
+        height: auto;
+    }
+}

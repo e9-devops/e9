@@ -1,0 +1,70 @@
+
+  .font-weight-demi {
+    font-family: $font-weight-demi;
+  }
+
+  .lead {
+    font-weight: 400;
+  }
+  .emphasis{
+    font-weight: 500;
+    color: $text-dark;
+  }
+
+  .text-dark {
+    color: $text-dark;
+  }
+
+  .text-default {
+    color: $text-default;
+  }
+
+  /**! Text Helpers **/
+
+  .t-xxl {
+    font-size: 1.875rem;
+    @include media-breakpoint-up(xs) {
+        font-size: 1.5rem;
+          }
+  }
+
+  .t-xl {
+    font-size: 1.5rem;
+
+  }
+
+  .t-l {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+
+  .t-s {
+    font-size: 0.75rem;
+  }
+
+  .t-xs {
+    font-size: 0.625rem;
+  }
+
+  .t-xxs {
+    font-size: 0.5rem;
+  }
+
+  @include create-heading-type-scale("major-second");
+
+  @include media-breakpoint-up(xs) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 16px;
+    }
+    @include create-heading-type-scale("minor-third");
+  }
+
+  @include media-breakpoint-up(xl) {
+    @include create-heading-type-scale("major-third");
+  }

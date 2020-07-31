@@ -1,0 +1,197 @@
+.navbar {
+    padding: 32px 48px;
+    transition: all .5s;
+
+    .navbar-brand {
+        max-width: 90px;
+        padding: 0;
+        transition: max-width 0.5s;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        width: 44px;
+        height: 44px;
+        border: 0;
+        padding: 0;
+
+        div {
+            background-color: #000;
+            transition: 500ms background cubic-bezier(0.19, 1, 0.22, 1), 500ms margin-top cubic-bezier(0.19, 1, 0.22, 1), 500ms margin-bottom cubic-bezier(0.19, 1, 0.22, 1), 500ms transform cubic-bezier(0.19, 1, 0.22, 1) 83ms;
+            height: 2px;
+            position: absolute;
+            transform-origin: 50% 50%;
+            width: 20px;
+            left: 12px;
+
+            &#line-1 {
+                top: 17px;
+            }
+
+            &#line-2 {
+                bottom: 17px;
+            }
+
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    .navbar-footer {
+        position: absolute;
+        bottom: 30px;
+        display: none;
+        left: 30px;
+
+        h2,
+        a {
+            color: #fff;
+        }
+    }
+
+    .navbar-nav {
+        .nav-link {
+            padding-right: 32px;
+            padding-left: 32px;
+            font-size: 1.375rem;
+            font-weight: 500;
+            color: $body-color;
+
+            &.active {
+                color: $secondary;
+            }
+
+            &:hover {
+                color: $secondary;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+
+    &.scrolled {
+        padding: 8px 48px;
+        background-color: rgba($color: #ffffff, $alpha: 0.8);
+
+        .navbar-brand {
+            max-width: 65px;
+            padding: 0;
+        }
+
+    }
+
+    &.scrolled-down {
+        top: -150px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                padding-right: 24px;
+                padding-left: 24px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .navbar {
+        padding: 30px !important;
+
+        &.scrolled {
+            padding: 8px 30px !important;
+        }
+
+        .navbar-brand {
+            max-width: 65px;
+        }
+
+        .navbar-collapse {
+            position: fixed;
+            height: 100% !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding-top: 120px;
+            background-color: $primary;
+            transition: opacity 0.5s;
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+
+            .navbar-nav {
+                .nav-link {
+                    color: #fff;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &.reveal-nav {
+            top: 0 !important;
+
+            .navbar-brand,
+            .navbar-toggler {
+                z-index: 1;
+            }
+
+            .navbar-toggler {
+                div {
+                    background: #fff;
+
+                    &#line-1 {
+                        transform: rotate(45deg);
+                        margin-top: 4px;
+                    }
+
+                    &#line-2 {
+                        transform: rotate(-45deg);
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+
+            .navbar-collapse {
+                visibility: visible;
+                opacity: 1;
+
+                .navbar-footer {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .navbar {
+        padding: 15px !important;
+
+        &.scrolled {
+            padding: 8px 15px !important;
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-link {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+
+            .navbar-footer {
+                left: 15px;
+                bottom: 15px;
+            }
+        }
+    }
+}

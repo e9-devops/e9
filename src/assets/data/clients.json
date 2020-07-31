@@ -1,0 +1,33 @@
+[{
+        "Name": "O2 Wifi",
+        "ImageURL": "home/client-logos/o2-wifi.png"
+    },
+    {
+        "Name": "Telefonica O2",
+        "ImageURL": "home/client-logos/telefonica-o2.png"
+    },
+    {
+        "Name": "Arora Group",
+        "ImageURL": "home/client-logos/arora-group.png"
+    },
+    {
+        "Name": "FSB",
+        "ImageURL": "home/client-logos/fsb.png"
+    },
+    {
+        "Name": "Excel Executive",
+        "ImageURL": "home/client-logos/excel.png"
+    },
+    {
+        "Name": "ITV",
+        "ImageURL": "home/client-logos/itv.png"
+    },
+    {
+        "Name": "Reel Cinemas",
+        "ImageURL": "home/client-logos/reelcinema.png"
+    },
+    {
+        "Name": "CitySprint",
+        "ImageURL": "home/client-logos/citysprint.png"
+    }
+]

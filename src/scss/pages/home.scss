@@ -1,0 +1,60 @@
+.bt-ind-animation {
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #474747;
+  border-radius: $card-border-radius;
+  overflow: hidden;
+
+  .background-image-holder {
+    height: 560px;
+  }
+
+  .landmarks{
+    position: absolute;
+    height: calc(100% - 38px);
+    bottom: 38px;
+    left: 0;
+    max-width: none;
+    will-change: transform;
+  }
+  .bus{
+    position: absolute;
+      width: 230px;
+      left: 50px;
+      bottom: 21px;  
+  }
+
+}
+
+
+@include media-breakpoint-down(xs) {
+  #heroAnim{
+    transform: scale(1.4);
+    margin:32px 0;
+    overflow: hidden;
+  }
+  #rocketAnim{
+    height: 300px;
+  }
+  .bt-ind-animation {
+    height: 500px;
+
+    .background-image-holder {
+      height: 460px;
+    }
+
+    .bus {
+      width: 230px;
+      left: 50px;
+      bottom: 21px;
+    }
+  }
+
+  .creative-bunch {
+    .background-image-holder {
+      background-position: 40% center !important;
+    }
+  }
+}

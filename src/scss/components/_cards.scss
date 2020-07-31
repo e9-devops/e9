@@ -1,0 +1,32 @@
+.h-card {
+    padding: 2rem;
+    @include border-radius(50px);
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    .h-card-img {
+        width: 70%;
+    }
+
+    &:hover {
+        background-color: #fff;
+        box-shadow: 0 1rem 3rem rgba($primary, .175);
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 0;
+
+        &:hover {
+            background: none;
+            box-shadow: none;
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        .h-card-img {
+            margin: 0 auto;
+        }
+
+    }
+}

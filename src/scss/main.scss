@@ -1,0 +1,44 @@
+@import "utilities/mixins";
+@import "utilities/misc";
+
+@import "vendors/bootstrap";
+@import "vendors/vendors";
+
+@import "base/base", "base/type", "base/variables", "base/reboot";
+
+@import "layout/header", "layout/footer";
+
+@import "components/buttons", "components/cards", "components/blob", "components/imageblock",
+"components/slick-slider", "components/revealer", "components/process", "components/imagecard";
+
+@import "../assets/css/aos.css";
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: normal;
+  font-display: swap;
+  src: url("~@/assets/fonts/AvenirNext/AvenirNext-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("~@/assets/fonts/AvenirNext/AvenirNext-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next Demi";
+  font-weight: 600;
+  font-display: swap;
+  src: url("~@/assets/fonts/AvenirNext/AvenirNext-DemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: bold;
+  font-style: normal;
+  src: url("~@/assets/fonts/AvenirNext/AvenirNext-Bold.woff") format("woff");
+}
+

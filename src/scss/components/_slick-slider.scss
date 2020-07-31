@@ -1,0 +1,207 @@
+.slick-slider {
+    .slick-list {
+        .slick-slide {
+            div:focus {
+                outline: 0;
+            }
+        }
+    }
+
+    ul.slick-dots {
+        li {
+            button {
+                &:before {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        &.line-dots {
+            li {
+                height: 8px;
+                width: 40px;
+                border-radius: 5px;
+                background-color: #ddd;
+                margin: 0;
+                margin-right: 1rem;
+
+                button {
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                &.slick-active {
+                    background-color: $primary;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &.white-dots {
+            li {
+                button {
+                    &:before {
+                        color: #fff;
+                    }
+                }
+
+                &.slick-active {
+                    button {
+                        &:before {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.slick-center-mode {
+        .slick-slide {
+            padding: 64px;
+
+            &.slick-center {
+                transform: scale(1.2);
+                transition: all 500ms ease;
+            }
+        }
+
+        @include media-breakpoint-down(xs) {
+            .slick-slide {
+                padding: 16px;
+
+                &.slick-center {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+}
+
+ol.slick-slider-arrows {
+    top: 0;
+    bottom: unset;
+    display: flex;
+    justify-content: center;
+
+    li {
+        text-indent: 0;
+        background: none;
+        cursor: pointer;
+        width: 50px;
+        height: auto;
+        margin-right: 1rem;
+        border: none;
+        opacity: .7;
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: .9;
+        }
+    }
+}
+
+.work-carousel {
+    .slick-list {
+        .slick-track {
+            padding-bottom: 96px;
+
+            .card-wrapper {
+                margin: 16px;
+                padding: 0 !important;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        .slick-list {
+            .slick-track {
+                padding-bottom: 64px;
+            }
+        }
+    }
+}
+
+.team-slider {
+.slick-arrow {
+    z-index: 1;
+    height: 60px;
+    width: 60px;
+    background: rgba( $secondary, .75 );
+    font-size: 48px;
+    text-align: center;
+    line-height: 60px;
+    transition: all .3s ease;
+    &:before{
+        display: none;
+    }
+    &:hover{
+        background: rgba( $secondary, .9 );
+    }
+    i{
+        color:#fff;
+        position: relative;
+    }
+    &.slick-prev{
+        left: 0;
+        i{
+            left: -3px;
+        }
+    }
+    &.slick-next{
+        right: 0;
+        i{
+            right: -3px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 32px;
+    }
+}
+    .slick-list {
+        .slick-track {
+            display: flex;
+
+            .slick-slide {
+                padding: 0 32px;
+                display: flex;
+                height: auto;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                }
+
+                @include media-breakpoint-down(lg) {
+                    margin: 0 16px;
+                    padding: 0;
+                }
+                @include media-breakpoint-down(sm) {
+                    margin: 0 8px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+}
+
+.slider-container {
+    overflow: hidden;
+}
+
+@include media-breakpoint-up(md) {
+    .services-carousel {
+        .slick-slide {
+            padding: 0 32px;
+        }
+    }
+}

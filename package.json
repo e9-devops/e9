@@ -1,0 +1,104 @@
+{
+  "name": "e9-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "staging": "vue-cli-service build --mode=staging",
+    "lint": "./node_modules/.bin/eslint --ext .vue .",
+    "lint-fix": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "bootstrap": "^4.4.1",
+    "browser-detect": "^0.2.28",
+    "glsl-noise": "0.0.0",
+    "glslify": "^7.0.0",
+    "gsap": "^2.0.2",
+    "jquery": "^3.4.1",
+    "lottie-web": "^5.6.10",
+    "register-service-worker": "^1.7.1",
+    "stats.js": "^0.17.0",
+    "three": "^0.98.0",
+    "vue": "^2.6.11",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^3.1.6",
+    "vue-slick-carousel": "^1.0.5",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@e9ine/eslint-config-vue": "latest",
+    "@vue/cli-plugin-babel": "^4.2.0",
+    "@vue/cli-plugin-eslint": "^4.2.0",
+    "@vue/cli-plugin-pwa": "^4.4.6",
+    "@vue/cli-service": "^4.2.0",
+    "babel-eslint": "^10.0.3",
+    "compression-webpack-plugin": "^3.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.1.2",
+    "glslify": "^6.2.1",
+    "glslify-import-loader": "^0.1.2",
+    "glslify-loader": "^1.0.2",
+    "imports-loader": "^0.8.0",
+    "lint-staged": "^9.4.2",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "yorkie": "^2.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "rules": {
+      "no-mixed-spaces-and-tabs": 0,
+      "no-console": 0
+    },
+    "ignorePatterns":["dist/*"],
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "globals": {
+      "Stripe": false,
+      "$": false,
+      "FB": false
+    },
+    "extends": [
+      "@e9ine/eslint-config-vue"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "src/**/*.vue": [
+      "prettier --write",
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "semi": true,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "printWidth": 200,
+    "bracketSpacing": false,
+    "arrowParens": "always",
+    "jsxBracketSameLine": true
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

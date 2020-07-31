@@ -1,0 +1,38 @@
+// Color system
+
+$primary: #D21D1C;
+$secondary: #3C3C3C;
+$body-color:#8D99AE;
+$primary-light:#FAF7F7;
+$dark: #000;
+
+// Padding
+$btn-padding:0.5rem 3rem;
+
+// Spacing
+// $spacer:2rem;
+
+// Fonts
+$font-size-base:1rem;
+$heading-type-scale-base: major-third;
+$display-type-scale-base : minor-third;
+$text-dark: #222222;
+$text-default:$body-color;
+$font-family-base:'Avenir Next',
+sans-serif;
+$font-weight-demi:'Avenir Next Demi',
+sans-serif;;
+$headings-font-weight:bold;
+
+$type-scales : (minor-second: 1.067,
+major-second: 1.125,
+minor-third: 1.200,
+major-third: 1.250,
+perfect-fourth: 1.333,
+augmented-fourth: 1.414,
+perfect-fifth: 1.500,
+golden-ratio: 1.618);
+
+
+$card-border-radius:24px;
+$card-border-radius-md:12px;

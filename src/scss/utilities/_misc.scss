@@ -1,0 +1,19 @@
+.next-arrow {
+	i {
+		transition: all 0.2s;
+		color: $primary;
+		position: relative;
+	}
+	&:hover {
+		i {
+			transform: translateX(10px);
+		}
+	}
+	@include media-breakpoint-down(xs) {
+		a {
+			i {
+				top: -2px;
+			}
+		}
+	}
+}
